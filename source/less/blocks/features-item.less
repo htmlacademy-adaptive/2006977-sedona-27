@@ -2,6 +2,18 @@
   background-color: @basic-color;
 }
 
+@media (min-width: @tablet-width) {
+  .features-item {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-item {
+    width: 400px;
+  }
+}
+
 .features-item__title {
   font-family: @font-family;
   font-weight: 700;

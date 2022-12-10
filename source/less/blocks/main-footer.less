@@ -11,3 +11,24 @@
   color: @font-color-basic;
   text-decoration: none;
 }
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

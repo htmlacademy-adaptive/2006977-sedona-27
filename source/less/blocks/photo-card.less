@@ -23,3 +23,17 @@
   text-transform: uppercase;
   color: @font-color-basic;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-card--current {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card--current {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}

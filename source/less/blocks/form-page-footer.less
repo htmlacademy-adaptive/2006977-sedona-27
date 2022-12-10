@@ -11,3 +11,24 @@
   color: @font-color-basic;
   text-decoration: none;
 }
+
+.form-page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
