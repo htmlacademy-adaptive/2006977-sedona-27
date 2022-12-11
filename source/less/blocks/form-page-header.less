@@ -1,12 +1,26 @@
+.form-page-header {
+  background-color: @basic-color;
+}
+
 .form-page-header__logo-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.form-page-header__wrapper {
+  width: 284px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .form-page-header {
     min-height: 56px;
+  }
+
+  .form-page-header__wrapper {
+    width: 648px;
+    margin: 0 auto;
   }
 
   .form-page-nav__toggle {
@@ -31,6 +45,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .form-page-header__logo-image {
     position: absolute;
     left: 0;

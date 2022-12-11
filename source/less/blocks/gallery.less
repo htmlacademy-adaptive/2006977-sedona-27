@@ -1,7 +1,18 @@
+.gallery__wrapper {
+  width: 284px;
+  margin: 0 auto;
+}
+
+.gallery {
+  background-color: @basic-color;
+}
+
 @media (min-width: @tablet-width) {
   .gallery__wrapper {
     display: grid;
     grid-template-columns: 324px 324px;
+    width: 648px;
+    margin: 0 auto;
   }
 }
 
@@ -9,5 +20,7 @@
   .gallery__wrapper {
     display: grid;
     grid-template-columns: 400px 400px 400px;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
