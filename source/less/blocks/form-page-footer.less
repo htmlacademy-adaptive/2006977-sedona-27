@@ -1,13 +1,40 @@
 .form-page-footer {
-  background-color: #ffffff;
+  background-color: @basic-color;
 }
 
 .form-page-footer__sedona-hashtag {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @font-color-basic;
   text-decoration: none;
+}
+
+.form-page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

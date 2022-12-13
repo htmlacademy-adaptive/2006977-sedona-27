@@ -1,21 +1,40 @@
 .video {
-  background-color: #ffffff;
+  background-color: @basic-color;
 }
 
 .video__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @font-color-basic;
 }
 
 .video__description {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: @font-color-light;
+}
+
+.video__wrapper {
+  width: 284px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .video__wrapper {
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

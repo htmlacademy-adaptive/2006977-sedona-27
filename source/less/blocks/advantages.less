@@ -1,1 +1,24 @@
-/*advantages*/
+.advantages {
+  background-color: @basic-color;
+}
+
+.advantages__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

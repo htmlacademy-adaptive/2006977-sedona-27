@@ -1,13 +1,40 @@
 .catalog-footer {
-  background-color: #ffffff;
+  background-color: @basic-color;
 }
 
 .catalog-footer__sedona-hashtag {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @font-color-basic;
   text-decoration: none;
+}
+
+.catalog-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

@@ -2,13 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="form-page-header">
+      <div class="form-page-header__wrapper">
       <a class="form-page-header__logo" href="index.html">
-        <img class="form-page-header__logo-image" src="" width="" height="" alt="Логотип сайта Седона.">
+        <img class="form-page-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип сайта Седона.">
       </a>
       <nav class="form-page-nav">
         <button class="form-page-nav__toggle" type="button">
@@ -22,6 +24,8 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Фото и видео</a>
               </li>
+              </ul>
+              <ul class="form-page-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Форма отзыва</a>
               </li>
@@ -31,21 +35,25 @@
             </ul>
           </div>
       </nav>
+    </div>
     </header>
     <main class="form-page-wrapper">
-      <section class="form-page-header">
-        <div class="form-page-header__wrapper">
+      <section class="form-page-title">
+        <div class="form-page-title__wrapper">
           <h1 class="visually-hidden">Форма отзыва о Седоне</h1>
-          <img class="form-page-header__image" src="" width="" height="" alt="Седона.">
+          <img class="form-page-title__image" src="" width="" height="" alt="Седона.">
         </div>
       </section>
       <section class="form-page-introduction">
+        <div class="form-page-introduction__wrapper">
         <h3 class="form-page-introduction__header">Оставьте свой отзыв</h3>
         <p class="form-page-introduction__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
       </section>
       <section class="form-section">
         <div class="form-section__wrapper">
           <form class="form" action="" method="post">
+            <div class="form__wrapper">
             <fieldset class="form-group">
               <legend class="form-group__title">Представьтесь:</legend>
               <label class="form-group__field-name" for="name">Имя*:</label>
@@ -62,6 +70,7 @@
               <label class="form-group__field-name" for="email">Электронная почта*:</label>
               <input class="form-group__field form-group__field--contacts-email" type="email" name="input-email" id="email" placeholder="Введите e-mail" required>
             </fieldset>
+          </div>
             <fieldset class="form-group">
               <legend class="form-group__title">Ваше общее впечатление:</legend>
               <ul class="form-group__list">

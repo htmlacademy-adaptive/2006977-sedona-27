@@ -1,31 +1,40 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .form-group__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @font-color-basic;
 }
 
 .form-group__field-name {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: @font-color-light;
 }
 
 .form-group__field {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
+  color: @font-color-basic;
+  font-family: @font-family;
 }
 
 .form-group__field::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -37,9 +46,9 @@
 }
 
 .form-group__label {
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-family;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: @font-color-basic;
 }

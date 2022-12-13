@@ -1,6 +1,72 @@
 .form-page-header {
-  background-image: url("../img/background-welcome.jpg");
-  background-repeat: no-repeat;
-  background-color: #ada9a9;
-  background-size: 100% auto;
+  background-color: @basic-color;
+}
+
+.form-page-header__logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-page-header__wrapper {
+  width: 284px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page-header {
+    min-height: 56px;
+  }
+
+  .form-page-header__wrapper {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .form-page-nav__toggle {
+    display: none;
+  }
+
+  .form-page-nav__list {
+    display: flex;
+  }
+
+  .form-page-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-page-header__logo-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .form-page-header__logo-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .form-page-nav__toggle {
+    display: none;
+  }
+
+  .form-page-header {
+    min-height: 56px;
+  }
+
+  .form-page-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
