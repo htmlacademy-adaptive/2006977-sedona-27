@@ -7,4 +7,18 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @font-color;
+  min-width: 280px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-button {
+    min-width: 324px;
+  }
+
+  .form-button__wrapper {
+    display: flex;
+    padding-bottom: 64px;
+  }
 }

@@ -1,26 +1,27 @@
 .features-item {
   background-color: @basic-color;
+  padding-left: 47px;
 }
 
-@media (min-width: @tablet-width) {
-  .features-item {
-    width: 256px;
-  }
+.features-item--accomodation {
+  background-image: url("../img/features-house.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 0 0;
 }
 
-@media (min-width: @desktop-width) {
-  .features-item {
-    width: 400px;
-  }
+.features-item--food {
+  background-image: url("../img/features-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 0 0;
 }
 
-.features-item__title {
-  font-family: @font-family;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: @font-color-basic;
+.features-item--souvenirs {
+  background-image: url("../img/features-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 0 0;
 }
 
 .features-item__description {
@@ -30,4 +31,79 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @font-color-light;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.features-item__title {
+  font-family: @font-family;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @font-color-basic;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .features-item {
+    width: 256px;
+    margin-left: 0;
+    text-align: center;
+    padding-top: 158px;
+    padding-left: 0;
+  }
+
+  .features-item__description {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features-item__title {
+    font-size: 21px;
+  }
+
+  .features-item--accomodation {
+    background-size: 77px 72px;
+    background-position: 70px 59px;
+  }
+
+  .features-item--food {
+    background-size: 80px 68px;
+    background-position: 70px 59px;
+  }
+
+  .features-item--souvenirs {
+    background-size: 67px 75px;
+    background-position: 70px 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-item {
+    width: 400px;
+    padding-top: 170px;
+  }
+
+  .features-item--accomodation {
+    background-position: 160px 59px;
+  }
+
+  .features-item--food {
+    background-position: 160px 59px;
+  }
+
+  .features-item--souvenirs {
+    background-position: 160px 59px;
+  }
+
+  .features-item__description {
+    width: 300px;
+
+    &--desktop-width {
+      width: 180px;
+    }
+  }
 }

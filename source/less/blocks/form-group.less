@@ -5,6 +5,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 23px;
+}
+
+.form-group--name {
+  position: relative;
+}
+
+.form-group--name::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 290px;
 }
 
 .form-group__title {
@@ -14,6 +28,11 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @font-color-basic;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 24px;
 }
 
 .form-group__field-name {
@@ -31,6 +50,63 @@
   line-height: 26px;
   color: @font-color-basic;
   font-family: @font-family;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+.form-group--contacts {
+  position: relative;
+}
+
+.form-group--contacts::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 200px;
+}
+
+.form-group--impression {
+  position: relative;
+}
+
+.form-group--impression::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 180px;
+}
+
+.form-group--attractions {
+  position: relative;
+}
+
+.form-group--attractions::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 245px;
+}
+
+.form-group__field--contacts-phone {
+  background-image: url("../img/icon-telephone.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form-group__field--contacts-email {
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .form-group__field::placeholder {
@@ -43,6 +119,12 @@
 
 .form-group__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-group__item:last-child {
+  margin-bottom: 0;
 }
 
 .form-group__label {
@@ -51,4 +133,301 @@
   font-size: 18px;
   line-height: 26px;
   color: @font-color-basic;
+}
+
+.form-group__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.form-group__input--text {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 16px;
+  margin-bottom: 33px;
+}
+
+.form-group__control {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+}
+
+.form-group__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  left: 0;
+  border-radius: 50%;
+  top: -10px;
+}
+
+.form-group__control-mark--square {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  left: 0;
+  top: -10px;
+}
+
+.form-group__input--radio:checked + .form-group__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.form-group__input--checkbox:checked + .form-group__control-mark--square::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+@media (min-width: @tablet-width) {
+  .form-group--name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    top: -50px;
+    left: 316px;
+  }
+
+  .form-group {
+    padding-bottom: 63px;
+  }
+
+  .form-group--name {
+    width: 280px;
+    margin-right: 70px;
+  }
+
+  .form-group--contacts {
+    width: 298px;
+  }
+
+  .form-group--contacts::before {
+    display: none;
+  }
+
+  .form-group__list--impression {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-group__item--impression {
+    width: 280px;
+    margin-right: 16px;
+    position: relative;
+  }
+
+  .form-group--impression::before {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+  }
+
+  .form-group--impression::after {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    position: absolute;
+  }
+
+  .form-group--attractions::before {
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+    content: "";
+  }
+
+  .form-group--attractions::after {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    position: absolute;
+  }
+
+  .form-group__list--attractions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
+
+  .form-group__item--attractions {
+    width: 224px;
+    margin-right: 32px;
+  }
+
+  .form-group__item--attractions:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .form-group--textarea {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .form-group--textarea::before {
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+    content: "";
+    position: absolute;
+  }
+
+  .form-group--textarea::after {
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    content: "";
+    position: absolute;
+  }
+
+  .form-group__input--text {
+    min-height: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-group__wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-group {
+    padding-bottom: 71px;
+  }
+
+  .form-group--name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    top: -50px;
+    left: 490px;
+  }
+
+  .form-group--impression::before {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+  }
+
+  .form-group--impression::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    position: absolute;
+  }
+
+  .form-group--attractions::before {
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+    content: "";
+  }
+
+  .form-group--attractions::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    position: absolute;
+  }
+
+  .form-group--textarea::before {
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    left: 0;
+    content: "";
+    position: absolute;
+  }
+
+  .form-group--textarea::after {
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: -30px;
+    right: 0;
+    content: "";
+    position: absolute;
+  }
+
+  .form-group--name {
+    width: 430px;
+    margin-right: 128px;
+  }
+
+  .form-group--contacts {
+    width: 402px;
+  }
+
+  .form-group__title {
+    font-size: 21px;
+    width: 306px;
+  }
+
+  .form-group__list--impression {
+    justify-content: space-around;
+  }
+
+  .form-group__item--impression {
+    margin: 0;
+    width: 280px;
+    text-align: center;
+  }
+
+  .form-group__list--attractions {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .form-group__item--attractions {
+    margin: 0;
+    width: 172px;
+    text-align: center;
+  }
 }

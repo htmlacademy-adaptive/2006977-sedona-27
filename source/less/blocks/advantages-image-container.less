@@ -4,9 +4,20 @@
   }
 }
 
+.advantages-image-container--border {
+  background-image: url("../img/introduction-border.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+}
+
 @media (min-width: @tablet-width) {
   .advantages-image-container {
     display: flex;
     width: 100%;
+  }
+
+  .advantages-image-container--border {
+    background-image: none;
   }
 }
