@@ -9,6 +9,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @font-color-basic;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .form-page-introduction__description {
@@ -18,11 +22,25 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @font-color-light;
+  margin: 0;
+  text-align: center;
 }
 
 .form-page-introduction__wrapper {
   width: 284px;
   margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.form-page-introduction__wrapper::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 185px;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,11 +48,27 @@
     width: 648px;
     margin: 0 auto;
   }
+
+  .form-page-introduction__wrapper::before {
+    display: none;
+  }
+
+  .form-page-introduction__header {
+    font-size: 30px;
+  }
+
+  .form-page-introduction__description {
+    width: 435px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-page-introduction__wrapper {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 115px;
+    padding-bottom: 67px;
   }
 }

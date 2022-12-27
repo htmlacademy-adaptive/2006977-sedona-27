@@ -1,3 +1,9 @@
+.photo-card {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .photo-card__title {
   font-family: @font-family;
   font-weight: 700;
@@ -5,6 +11,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @font-color-basic;
+  margin: 0;
 }
 
 .photo-card__author {
@@ -13,6 +20,8 @@
   font-size: 14px;
   line-height: 21px;
   color: @font-color-light;
+  margin: 0;
+  margin-bottom: 11px;
 }
 
 .photo-card__like-number {
@@ -24,10 +33,38 @@
   color: @font-color-basic;
 }
 
+.photo-card__like-icon {
+  fill: #000000;
+  opacity: 30%;
+}
+
+.photo-card__image {
+  margin-bottom: 15px;
+}
+
 @media (min-width: @tablet-width) {
+  .photo-card {
+    padding: 0;
+    border: none;
+  }
+
   .photo-card--current {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  .photo-card__description-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &--contrast {
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -35,5 +72,27 @@
   .photo-card--current {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  .photo-card__description-wrapper {
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
+  .photo-card__title {
+    color: #ffffff;
+  }
+
+  .photo-card__author {
+    color: #ffffff;
+  }
+
+  .photo-card__like-number {
+    color: #ffffff;
+  }
+
+  .photo-card__like-icon {
+    fill: #ffffff;
+    opacity: 100%;
   }
 }

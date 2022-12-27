@@ -10,6 +10,9 @@
   text-transform: uppercase;
   color: @font-color-basic;
   text-decoration: none;
+  text-align: center;
+  padding-top: 28px;
+  margin-bottom: 33px;
 }
 
 .catalog-footer__wrapper {
@@ -17,6 +20,15 @@
   flex-direction: column;
   width: 284px;
   margin: 0 auto;
+}
+
+.catalog-footer__copyright {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.catalog-footer__social {
+  margin-bottom: 47px;
 }
 
 @media (min-width: @tablet-width) {
@@ -27,6 +39,14 @@
     width: 648px;
     margin: 0 auto;
   }
+
+  .catalog-footer__sedona-hashtag {
+    margin-right: 97px;
+  }
+
+  .catalog-footer__social {
+    margin-right: 100px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -36,5 +56,15 @@
     align-items: center;
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .catalog-footer__sedona-hashtag {
+    margin-left: 104px;
+    margin-right: 254px;
+  }
+
+  .catalog-footer__social {
+    margin-right: 256px;
+    padding: 0;
   }
 }
