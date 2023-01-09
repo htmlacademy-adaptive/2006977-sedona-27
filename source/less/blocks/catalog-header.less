@@ -1,5 +1,6 @@
 .catalog-header {
   background-color: @basic-color;
+  height: 56px;
 }
 
 .catalog-header__logo-image {
@@ -7,6 +8,16 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
+}
+
+.catalog-header__logo {
+  height: 56px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-header__logo-image--nav-opened {
+    display: none;
+  }
 }
 
 .catalog-header__wrapper {
