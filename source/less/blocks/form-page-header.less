@@ -1,5 +1,6 @@
 .form-page-header {
   background-color: @basic-color;
+  height: 56px;
 }
 
 .form-page-header__logo-image {
@@ -9,9 +10,19 @@
   z-index: 2;
 }
 
+.form-page-header__logo {
+  height: 56px;
+}
+
 .form-page-header__wrapper {
   width: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: @mobile-width-only) {
+  .form-page-header__logo-image--nav-opened {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {

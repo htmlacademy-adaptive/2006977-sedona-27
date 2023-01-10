@@ -66,6 +66,10 @@
       background-color: #eaeaea;
     }
   }
+
+  .photo-card__image {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -75,8 +79,9 @@
   }
 
   .photo-card__description-wrapper {
-    background-color: #000000;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: -95px;
   }
 
   .photo-card__title {

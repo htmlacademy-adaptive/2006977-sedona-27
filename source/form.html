@@ -4,15 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: форма отзыва</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="form-page-header">
       <div class="form-page-header__wrapper">
       <a class="form-page-header__logo" href="index.html">
-        <img class="form-page-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип сайта Седона.">
+        <img class="form-page-header__logo-image <!--form-page-header__logo-image--nav-opened-->" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип сайта Седона.">
       </a>
-      <nav class="form-page-nav form-page-nav--opened <!--form-page-nav--closed--> form-page-nav--nojs">
+      <nav class="form-page-nav <!--form-page-nav--opened--> form-page-nav--closed form-page-nav--nojs">
         <span class="form-page-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
           </span>
@@ -75,21 +79,21 @@
             <fieldset class="form-group form-group--impression">
               <legend class="form-group__title">Ваше общее впечатление:</legend>
               <ul class="form-group__list form-group__list--impression">
-                <li class="form-group__item form-group__item--impression">
+                <li class="form-group__item ">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--radio" type="radio" name="impression" value="positive" checked>
                     <span class="form-group__control-mark"></span>
                     <span class="form-group__label">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="form-group__item form-group__item--impression">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--radio" type="radio" name="impression" value="negative">
                     <span class="form-group__control-mark"></span>
                     <span class="form-group__label">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="form-group__item form-group__item--impression">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--radio" type="radio" name="impression" value="unsure">
                     <span class="form-group__control-mark"></span>
@@ -101,28 +105,28 @@
             <fieldset class="form-group form-group--attractions">
               <legend class="form-group__title">Посещенные достопримечательности:</legend>
               <ul class="form-group__list form-group__list--attractions">
-                <li class="form-group__item form-group__item--attractions">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--checkbox" type="checkbox" name="devils-bridge" checked>
                     <span class="form-group__control-mark--square"></span>
                     <span class="form-group__label">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="form-group__item form-group__item--attractions">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--checkbox" type="checkbox" name="bell-mountain" checked>
                     <span class="form-group__control-mark--square"></span>
                     <span class="form-group__label">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="form-group__item form-group__item--attractions">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--checkbox" type="checkbox" name="slide-park" checked>
                     <span class="form-group__control-mark--square"></span>
                     <span class="form-group__label">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="form-group__item form-group__item--attractions">
+                <li class="form-group__item">
                   <label class="form-group__control">
                     <input class="visually-hidden form-group__input form-group__input--checkbox" type="checkbox" name="red-mountains">
                     <span class="form-group__control-mark--square"></span>

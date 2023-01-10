@@ -6,6 +6,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 23px;
+  position: relative;
 }
 
 .form-group--name {
@@ -139,6 +140,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .form-group__input--text {
@@ -146,6 +148,7 @@
   background-color: #f2f2f2;
   padding: 16px;
   margin-bottom: 33px;
+  font-family: @font-family;
 }
 
 .form-group__control {
@@ -227,7 +230,7 @@
     flex-wrap: wrap;
   }
 
-  .form-group__item--impression {
+  .form-group__list--impression > .form-group__item {
     width: 280px;
     margin-right: 16px;
     position: relative;
@@ -279,12 +282,12 @@
     width: 480px;
   }
 
-  .form-group__item--attractions {
+  .form-group__list--attractions > .form-group__item {
     width: 224px;
     margin-right: 32px;
   }
 
-  .form-group__item--attractions:nth-child(2n) {
+  .form-group__list--attractions > .form-group__item:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -414,7 +417,7 @@
     justify-content: space-around;
   }
 
-  .form-group__item--impression {
+  .form-group__list--impression > .form-group__item {
     margin: 0;
     width: 280px;
     text-align: center;
@@ -425,9 +428,8 @@
     justify-content: space-around;
   }
 
-  .form-group__item--attractions {
+  .form-group__list--attractions > .form-group__item {
     margin: 0;
-    width: 172px;
     text-align: center;
   }
 }
