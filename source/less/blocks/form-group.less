@@ -59,6 +59,20 @@
   margin-bottom: 16px;
 }
 
+.form-group__field:hover {
+  background: #e5e5e5;
+}
+
+.form-group__field:active {
+  background: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
+.form-group__field:focus {
+  background: #ffffff;
+  outline: 4px solid #e5e5e5;
+}
+
 .form-group--contacts {
   position: relative;
 }
@@ -143,12 +157,34 @@
   position: relative;
 }
 
+.form-group__item:hover .form-group__control-mark {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.form-group__item:active .form-group__control-mark {
+  background: #d5d5d5;
+}
+
+.form-group__item:hover .form-group__control-mark--square {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.form-group__item:active .form-group__control-mark--square {
+  background: #d5d5d5;
+}
+
 .form-group__input--text {
   border: none;
   background-color: #f2f2f2;
   padding: 16px;
   margin-bottom: 33px;
   font-family: @font-family;
+}
+
+.form-group__input--text:hover {
+  background-color: #e5e5e5;
 }
 
 .form-group__control {
