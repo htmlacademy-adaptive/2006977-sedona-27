@@ -7,6 +7,11 @@
 
 .social__link {
   text-align: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: block;
+  position: relative;
 }
 
 .social__item {
@@ -14,13 +19,19 @@
 }
 
 .social__icon {
-  fill: #81b3d2;
+  position: absolute;
+  top: 17px;
+  left: 13px;
 }
 
-.social__item:hover .social__icon {
-  fill: #669ec0;
+.social__link:hover .social__icon {
+  opacity: 0.3;
 }
 
-.social__item:active .social__icon {
-  fill: #5496bd;
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }

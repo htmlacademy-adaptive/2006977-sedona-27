@@ -10,7 +10,7 @@ import htmlmin from 'gulp-htmlmin';
 import libsquoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -91,7 +91,7 @@ const copy = (done) => {
 //Clean
 
 const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 }
 
 // Server
@@ -154,6 +154,3 @@ export default gulp.series(
     watcher
   )
 );
-
-  //sprite, svg, createWebp, optimizeImages, copyImages, html, styles, copy, server, watcher
-
