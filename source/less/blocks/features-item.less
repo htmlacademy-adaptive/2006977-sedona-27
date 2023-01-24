@@ -13,14 +13,14 @@
 .features-item--food {
   background-image: url("../img/features-burger.svg");
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 40px 35px;
   background-position: 0 0;
 }
 
 .features-item--souvenirs {
   background-image: url("../img/features-gift.svg");
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
   background-position: 0 0;
 }
 
@@ -44,6 +44,11 @@
   color: @font-color-basic;
   margin: 0;
   margin-bottom: 16px;
+  padding-top: 10px;
+}
+
+.features-item__title--food {
+  padding-top: 7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,13 +66,33 @@
     margin-right: auto;
   }
 
+  .features-item__description--accomodation {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features-item__description--souvenirs {
+    margin-left: 50px;
+  }
+
   .features-item__title {
     font-size: 21px;
+    padding-top: 0;
+  }
+
+  .features-item__title--accomodation {
+    text-align: justify;
+    margin-left: 55px;
+  }
+
+  .features-item__title--souvenirs {
+    margin-left: 55px;
   }
 
   .features-item--accomodation {
     background-size: 77px 72px;
-    background-position: 70px 59px;
+    background-position: 50px 59px;
   }
 
   .features-item--food {
@@ -77,7 +102,7 @@
 
   .features-item--souvenirs {
     background-size: 67px 75px;
-    background-position: 70px 59px;
+    background-position: 112px 65px;
   }
 }
 
@@ -99,11 +124,28 @@
     background-position: 160px 59px;
   }
 
+  .features-item__title--accomodation {
+    margin-left: 170px;
+  }
+
+  .features-item__title--souvenirs {
+    margin-left: 0;
+  }
+
   .features-item__description {
     width: 300px;
 
     &--desktop-width {
-      width: 180px;
+      width: 200px;
     }
+  }
+
+  .features-item__description--souvenirs {
+    margin-left: 100px;
+  }
+
+  .features-item__description--accomodation {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

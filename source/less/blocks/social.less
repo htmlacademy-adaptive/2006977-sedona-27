@@ -7,8 +7,31 @@
 
 .social__link {
   text-align: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: block;
+  position: relative;
 }
 
 .social__item {
   margin-right: 6px;
+}
+
+.social__icon {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+}
+
+.social__link:hover .social__icon {
+  opacity: 0.3;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }

@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -23,7 +23,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--main" href="#">Главная</a>
+                <a class="site-list__link site-list__link--main site-list__link--current" href="#">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--photo" href="catalog.html">Фото и видео</a>
@@ -66,9 +66,9 @@
           </div>
         </div>
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="../img/advantages-city-view-desktop.webp 1x, ../img/advantages-city-view-desktop@2x.webp 2x">
+          <!--<source type="image/webp" media="(min-width: 1200px)" srcset="../img/advantages-city-view-desktop.webp 1x, ../img/advantages-city-view-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="../img/advantages-city-view-tablet.webp 1x, ../img/advantages-city-view@2x.webp 2x">
-          <source type="image/webp" srcset="../img/advantages-city-view.webp 1x, ../img/advantages-city-view@2x.webp 2x">
+          <source type="image/webp" srcset="../img/advantages-city-view.webp 1x, ../img/advantages-city-view@2x.webp 2x">-->
           <source media="(min-width: 1200px)" srcset="../img/advantages-city-view-desktop.jpg 1x, ../img/advantages-city-view-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="../img/advantages-city-view-tablet.jpg 1x, ../img/advantages-city-view-tablet@2x.jpg 2x">
           <img class="advantages-image" src="../img/advantages-city-view.jpg" width="320" height="260" srcset="../img/advantages-city-view@2x.jpg 2x" alt="Вид на город Седона.">
@@ -76,16 +76,16 @@
           </div>
           <div class="position-wrapper position-wrapper--features">
           <div class="features-item features-item--accomodation">
-            <h3 class="features-item__title">Жилье</h3>
-            <p class="features-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="features-item__title features-item__title--accomodation">Жилье</h3>
+            <p class="features-item__description features-item__description--accomodation">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-item features-item--food">
-            <h3 class="features-item__title ">Еда</h3>
+            <h3 class="features-item__title features-item__title--food">Еда</h3>
             <p class="features-item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="features-item features-item--souvenirs">
-            <h3 class="features-item__title">Сувениры</h3>
-            <p class="features-item__description features-item__description--desktop-width">Не только китайского, но и местного производства!</p>
+            <h3 class="features-item__title features-item__title--souvenirs">Сувениры</h3>
+            <p class="features-item__description features-item__description--souvenirs features-item__description--desktop-width">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="advantages__background-wrapper">
@@ -112,7 +112,7 @@
           <div class="advantages-item advantages-item--padding advantages-item--border">
             <h3 class="advantages-item__title">Красивая дорога</h3>
             <p class="advantages-item__number">№4</p>
-            <p class="advantages-item__description advantages-item__description--padding advantages-item__description--tablet-width">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages-item__description advantages-item__description--padding advantages-item__description--tablet-width advantages-item__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="advantages-item advantages-item--padding">
             <h3 class="advantages-item__title">Мало туристов</h3>
@@ -169,7 +169,7 @@
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35">
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" fill="#000000">
               <use xlink:href="img/sprite.svg#academy-icon"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
