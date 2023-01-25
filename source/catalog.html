@@ -57,7 +57,7 @@
       <section class="gallery">
         <div class="gallery__wrapper">
           <div class="photo-card photo-card--current">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="../img/gallery-sunset-desktop.jpg 1x, ../img/gallery-sunset-desktop@2x.jpg 2x" width="1200" height="400">
                 <source media="(min-width: 768px)" srcset="../img/gallery-sunset-tablet.jpg 1x, ../img/gallery-sunset-tablet@2x.jpg 2x" width="648" height="480">
@@ -70,7 +70,7 @@
               <p class="photo-card__author">Автор фото: Борис</p>
             </div>
             <div class="photo-card__like-wrapper">
-            <a class="photo-card__like" type="button">
+            <a class="photo-card__like" href="#">
               <span class="visually-hidden">Нравится</span>
               <svg class="photo-card__like-icon" aria-hidden="true" focusable="false" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like"> </use>
@@ -81,7 +81,7 @@
           </div>
           </div>
           <div class="photo-card">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="../img/gallery-plant-desktop.jpg 1x, ../img/gallery-plant-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="../img/gallery-plant-tablet.jpg 1x, ../img/gallery-plant-tablet@2x.jpg 2x" width="324" height="267">
@@ -94,7 +94,7 @@
               <p class="photo-card__author">Автор фото: Сергей</p>
             </div>
             <div class="photo-card__like-wrapper">
-            <a class="photo-card__like" type="button">
+            <a class="photo-card__like" href="#">
               <svg class="photo-card__like-icon" aria-hidden="true" focusable="false" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like"> </use>
               </svg>
@@ -105,7 +105,7 @@
           </div>
           </div>
           <div class="photo-card">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="../img/gallery-track-desktop.jpg 1x, ../img/gallery-track-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="../img/gallery-track-tablet.jpg 1x, ../img/gallery-track-tablet@2x.jpg 2x" width="324" height="267">
@@ -118,7 +118,7 @@
               <p class="photo-card__author">Автор фото: Петр</p>
             </div>
             <div class="photo-card__like-wrapper">
-            <a class="photo-card__like" type="button">
+            <a class="photo-card__like" href="#">
               <svg class="photo-card__like-icon" aria-hidden="true" focusable="false" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like"> </use>
               </svg>
@@ -129,7 +129,7 @@
           </div>
           </div>
           <div class="photo-card">
-            <a class="photo-card__link">
+            <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="../img/gallery-devils-bridge-desktop.jpg 1x, ../img/gallery-devils-bridge-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="../img/gallery-devils-bridge-tablet.jpg 1x, ../img/gallery-devils-bridge-tablet@2x.jpg 2x" width="324" height="267">
@@ -142,7 +142,7 @@
               <p class="photo-card__author">Автор фото: Антон</p>
             </div>
             <div class="photo-card__like-wrapper">
-            <a class="photo-card__like" type="button">
+            <a class="photo-card__like" href="#">
               <svg class="photo-card__like-icon" aria-hidden="true" focusable="false" width="23" height="21">
                 <use xlink:href="img/sprite.svg#like"> </use>
               </svg>
@@ -158,11 +158,14 @@
         <div class="video__wrapper">
           <h3 class="video__title">Все еще сомневаетесь?</h3>
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <a class="video__link" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="../img/gallery-video-desktop.jpg 1x, ../img/gallery-video-desktop@2x.jpg 2x" width="800" height="500">
             <source media="(min-width: 768px)" srcset="../img/gallery-video-tablet.jpg 1x, ../img/gallery-video-tablet@2x.jpg 2x" width="648" height="500">
           <img class="video__player" src="../img/gallery-video.jpg" srcset="../img/gallery-video@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация города Седона.">
         </picture>
+      </a>
+      <button class="video__play"><span class="visually-hidden">Проиграть видео</span></button>
         </div>
       </section>
     </main>
