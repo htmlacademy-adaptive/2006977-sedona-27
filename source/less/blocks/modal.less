@@ -5,10 +5,12 @@
   &--failure {
     padding-top: 45px;
     padding-bottom: 35px;
+    width: 100%;
   }
 
   &--success {
     padding-top: 39px;
+    width: 100%;
   }
 }
 
@@ -134,17 +136,41 @@
   }
 
   .modal__button--close {
-    min-width: 458px;
+    width: 458px;
   }
 
   .modal--success {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
+    height: 347px;
   }
 
   .modal__wrapper-contrast {
     padding-top: 44px;
-    padding-bottom: 44px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal--success {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 347px;
+  }
+
+  .modal__button--close {
+    width: 458px;
+  }
+
+  .modal--failure {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal__button--accept {
+    min-width: 272px;
   }
 }
