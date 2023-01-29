@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -66,6 +67,9 @@
           </div>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="../img/advantages-city-view-desktop.webp 1x, ../img/advantages-city-view-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="../img/advantages-city-view-tablet.webp 1x, ../img/advantages-city-view-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="../img/advantages-city-view.webp 1x, ../img/advantages-city-view@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="../img/advantages-city-view-desktop.jpg 1x, ../img/advantages-city-view-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="../img/advantages-city-view-tablet.jpg 1x, ../img/advantages-city-view-tablet@2x.jpg 2x">
           <img class="advantages-image" src="../img/advantages-city-view.jpg" width="320" height="260" srcset="../img/advantages-city-view@2x.jpg 2x" alt="Вид на город Седона.">
