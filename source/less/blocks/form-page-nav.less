@@ -12,6 +12,15 @@
   background-color: @background-color;
 }
 
+.form-page-nav--closed .mform-page-nav__toggle:hover {
+  background-color: #81b3d2;
+}
+
+.form-page-nav--closed .form-page-nav__toggle:active {
+  background-color: #81b3d2;
+  opacity: 0.3;
+}
+
 .form-page-nav--closed .form-page-nav__toggle::before {
   content: "";
   position: absolute;
@@ -19,6 +28,15 @@
   height: 4px;
   background-color: @background-color;
   top: 9px;
+}
+
+.form-page-nav--closed .form-page-nav__toggle:hover::before {
+  background-color: #81b3d2;
+}
+
+.form-page-nav--closed .form-page-nav__toggle:active::before {
+  background-color: #81b3d2;
+  opacity: 0.3;
 }
 
 .form-page-nav--closed .form-page-nav__toggle::after {
@@ -30,6 +48,14 @@
   top: 18px;
 }
 
+.form-page-nav--closed .form-page-nav__toggle:hover::after {
+  background-color: #81b3d2;
+}
+
+.form-page-nav--closed .form-page-nav__toggle:active::after {
+  background-color: #81b3d2;
+  opacity: 0.3;
+}
 
 .form-page-nav__wrapper {
   width: 100%;
@@ -68,10 +94,19 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
   &:active::before,
   &:active::after {
     background-color: fade(#ffffff, 30%);
   }
+}
+
+.form-page-nav--opened .form-page-nav__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
